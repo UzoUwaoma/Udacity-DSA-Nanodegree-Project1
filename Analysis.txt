@@ -1,0 +1,50 @@
+Run time analysis
+
+------------------------------------------------------------------------------------------------
+# Task0.py
+
+Run time is independent of the size of the input data.
+
+Therefore, time complexity = O(1)
+------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------
+# Task1.py
+
+Main code contains two "for loops". In the worst case scenario, the code loops through the 
+entire size of the "texts" and "calls" lists.
+
+Therefore, time complexity = O(n)
+------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------
+# Task2.py
+
+In the worst case scenario involves looping through the entirety of the "calls" list while
+searching through the entirety of the "time_spent" dictionary.
+
+Therefore, time complexity = O(n^2).
+------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------
+# Task3.py
+
+Worst case scenario occurs when all numbers in the "calls" list start with '(080)'.
+
+In this scenario, the code evaluates each outgoing call in "calls" list --> n times
+	For each outgoing call, examines the receiving number --> n times
+
+Therefore, time complexity = O(n^2).
+------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------
+# Task4.py
+------------------------------------------------------------------------------------------------
+The code depends on the size of the "calls" and "texts" lists.
+
+The code populates a list of outgoing calls, incoming calls, sent texts and received texts once. 
+
+Thus for each of these operations, the code is exectued n-times.
+
+However, to print in lexicograhical order, the code sorts the items in the populated list
+prior to printing. Thus making the time colpexity = O(n log n)
